@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -22,9 +23,31 @@
  .topside{
      background-color: rgba(255, 255, 255, 0.96);
      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-     padding:10px;
+     padding:27px;
      color: #888888;
 }
+   li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+   ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   }
+ .menuclas{
+    color: #b7b7b7;
+    border: 0;
+    padding: 5px;
+    margin-left: 0px;
+
+    transition: 0.5s;
+ }
+ .menuclas:hover{
+ 	color: #fff;
+ 	cursor: pointer;
+ 	margin-left: 10px;
+ 	transition: 0.5s;
+ }
+
 </style>
 </head>
 
@@ -32,10 +55,14 @@
 
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav style="background:transparent url('thumbnail.jpg') no-repeat center center /cover;" id="sidebar">
+        <nav style="background-color:#232d3a;" id="sidebar" >
+        <div class="text-center"></div>
+        <div style="padding-top:100px" class="col d-flex justify-content-center"><img class="rounded-circle justify-content-center" style="width:150px;height:150px" src="123.jpg"></div><div style="padding-top:20px;" class="text-center"> <h4> User Name</h4> </div>
+       <!-- <nav style="background:transparent url('thumbnail.jpg') no-repeat center center /cover;" id="sidebar">-->
         
 
-        
+<ul class="" style="margin-top:100px"><li class="menuclas">Транспорт </li><li class="menuclas">Недвижимость</li><li class="menuclas">Телефоны и связь</li><li class="menuclas">Компьютеры и оргтехника</li><li class="menuclas">Строительство и ремонт <span class="badge badge-light">9</span></li><li class="menuclas">Одежда, обувь и аксессуары</li><li class="menuclas">Мебель и интерьер</li><li class="menuclas">Аудио-Видео-Фото</li>
+<li class="menuclas">Бытовая техника</li><li class="menuclas">Работа</li><li class="menuclas">Спорт, здоровье, красота</li><li class="menuclas">Туризм, отдых и развлечения</li><li class="menuclas">Бизнес</li></ul>    
 
 
 
@@ -50,36 +77,40 @@
                         <span>Toggle Sidebar</span>
             </button>
             <span>Главная</span>
+
         </div>
 
 
 
 <div class="img-thumbnail" style="color: black;padding:20px; margin: 20px; ">
   <div class="row">
-  <div class="col-9" style="">
-        <div class="row" style="border-right: 1px solid #e5e5e5">
-          <div class="col-8">
+  <div class="col-12 col-lg-12 col-xl-9 col-md-12 col-sm-12" style="">
+        <div class="row box ofh" style="border-right: 1px solid #e5e5e5">
+        <div class="top-cross-ribbon">Новинка!</div>
+          <div class="col-12 col-lg-12 col-xl-8 col-md-12 col-sm-12">
               <!-- <div id="activeImagePreview">
 
               </div> -->
-                <div class="w">
+              <div class="">
+                <div class="w ">
                     <div class="ts">
                     <input type="radio" id="c1" name="ts" checked="checked"/>
-                    <label class="t" for="c1"><img class="" src="./images/image1.jpg"/></label>
+                    <label class="t imagefloat" for="c1"><img class="" src="https://static8.depositphotos.com/1020341/896/i/950/depositphotos_8969502-stock-photo-human-face-with-cracked-texture.jpg"/></label>
                     <input type="radio" id="c2" name="ts"/>
-                    <label class="t" for="c2"><img src="./images/image2.jpg"/></label>
+                    <label class="t imagefloat" for="c2"><img src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg"/></label>
                     <input type="radio" id="c3" name="ts"/>
-                    <label class="t" for="c3"><img src="./images/image3.jpg"/></label>
+                    <label class="t imagefloat" for="c3"><img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"/></label>
                     <input type="radio" id="c4" name="ts"/>
-                    <label class="t" for="c4"><img src="./images/image4.jpg"/></label>
+                    <label class="t imagefloat" for="c4"><img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/></label>
                     <input type="radio" id="c5" name="ts"/>
-                    <label class="t" for="c5"><img src="./images/image5.jpg"/></label>
+                    <label class="t imagefloat" for="c5"><img src="https://t4.ftcdn.net/jpg/02/91/24/27/240_F_291242770_z3XC7rJB1Mvc5jVMsEY9Dx2xMrX4sxUi.jpg"/></label>
                     <input type="radio" id="c6" name="ts"/>
-                    <label class="t" for="c6"><img src="./images/image6.jpg"/></label>
+                    <label class="t imagefloat" for="c6"><img src="https://images.unsplash.com/photo-1545922016-87c93aaca2ce?ixlib=rb-1.2.1&w=1000&q=80"/></label>
                     </div>
                 </div>
+                </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 ">
                    <div>Автор:</div>
                    <div>Дата:</div>
                    <div>Описание:</div>
@@ -93,9 +124,17 @@
             </div>
         </div>
   </div>
-              <div class="col-3">Новость 2</div>
+              <div class="col-12 sm-12 col-md-12 col-lg-12 col-xl-3">Новость 2</div>
 
 </div>
+</div>
+<div style="background-color:black;" class="text-center" >
+            			<ul class="social-icon-list after-effect zoom out">
+							<li class="fb"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li class="yt"><a href="#"><i class="fab fa-youtube"></i></a></li>
+							<li class="sk"><a href="#"><i class="fab fa-skype"></i></a></li>
+						</ul>
 </div>
 </div>
 
